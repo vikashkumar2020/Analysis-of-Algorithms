@@ -1,5 +1,4 @@
-#include <bits/stdc++.h> // header file
-using namespace std;
+#include <stdio.h> // header file
 
 void insertion_sort(int arr[], int n) // insertion sort function
 {
@@ -19,36 +18,33 @@ void insertion_sort(int arr[], int n) // insertion sort function
 int main() // main function
 {
     int n;
-    cout << "Enter the size of array"
-         << "\n";
-    cin >> n;
+    printf("%s", "Enter the size of array\n");
+    scanf( "%d",&n);
 
     int arr[n];
 
-    cout << "Enter the elements of array"
-         << "\n";
+    printf( "%s","Enter the elements of array\n");
 
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        scanf( "%d",&arr[i]);
     }
-    cout << "elements of array before sorting"
-         << "\n";
+    
+    printf("%s", "elements of array before sorting\n");
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        printf( "%d ",arr[i] );
     }
-
+    
     insertion_sort(arr, n); // insertion sort function called
 
-    cout << "\n";
+    printf( "%s","\n");
 
-    cout << "elements of array after sorting"
-         << "\n";
+    printf("%s", "elements of array after sorting\n");
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        printf("%d ", arr[i]);
     }
 
     return 0;
